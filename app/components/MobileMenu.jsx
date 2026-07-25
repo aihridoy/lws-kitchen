@@ -49,7 +49,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
               Categories
             </Link>
             <Link
-              href="/category"
+              href="/latest"
               onClick={onClose}
               className="px-4 py-3 rounded-xl text-lg font-medium text-ink hover:bg-cream transition-colors"
             >

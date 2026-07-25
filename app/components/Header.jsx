@@ -61,7 +61,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/category"
+                  href="/latest"
                   className="px-4 py-2 rounded-full text-sm font-medium text-ink hover:bg-cream transition-colors"
                 >
                   Latest Recipes
