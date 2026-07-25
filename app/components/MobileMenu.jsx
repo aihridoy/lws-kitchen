@@ -1,9 +1,21 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const MobileMenu = ({ isOpen, onClose }) => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const router = useRouter();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (!searchTerm.trim()) return;
+    router.push(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+    setSearchTerm('');
+    onClose();
+  };
+
   return (
     <>
       {/* Backdrop */}
@@ -34,6 +46,15 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
           {/* Nav links */}
           <nav className="flex flex-col gap-1 mt-8">
+            <form onSubmit={handleSearch} className="mb-4">
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Search recipes..."
+                className="input-field text-sm"
+              />
+            </form>
             <Link
               href="/"
               onClick={onClose}
@@ -49,11 +70,18 @@ const MobileMenu = ({ isOpen, onClose }) => {
               Categories
             </Link>
             <Link
-              href="/category"
+              href="/latest"
               onClick={onClose}
               className="px-4 py-3 rounded-xl text-lg font-medium text-ink hover:bg-cream transition-colors"
             >
               Latest Recipes
+            </Link>
+            <Link
+              href="/saved"
+              onClick={onClose}
+              className="px-4 py-3 rounded-xl text-lg font-medium text-ink hover:bg-cream transition-colors"
+            >
+              Saved
             </Link>
           </nav>
 

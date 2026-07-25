@@ -5,10 +5,11 @@ import singleBanner from '/public/assets/single-banner.jpg';
 import recipeData from '../../data/recipes.json';
 import categoriesData from '../../data/categories.json';
 import Link from 'next/link';
+import PdpActions from '../../components/PdpActions';
 
 const RecipeDetails = ({ params }) => {
   const { recipe: recipeId } = params;
-  const recipe = recipeData.find((r) => r.category_id === recipeId);
+  const recipe = recipeData.find((r) => r.id === recipeId);
 
   if (!recipe) {
     return (
@@ -74,20 +75,7 @@ const RecipeDetails = ({ params }) => {
         </div>
 
         {/* Action buttons */}
-        <div className="flex gap-3 mb-8 md:mb-12">
-          <button className="btn-secondary inline-flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
-            </svg>
-            Share
-          </button>
-          <button className="btn-secondary inline-flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
-            </svg>
-            Save
-          </button>
-        </div>
+        <PdpActions recipeId={recipe.id} />
 
         {/* Description */}
         <p className="text-muted text-lg leading-relaxed mb-10 md:mb-14">
@@ -160,7 +148,7 @@ const RecipeDetails = ({ params }) => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {relatedRecipes.map((relatedRecipe) => (
                 <Link
-                  href={`/${getCategoryName(relatedRecipe.category_id)}/${relatedRecipe.category_id}`}
+                  href={`/${getCategoryName(relatedRecipe.category_id)}/${relatedRecipe.id}`}
                   key={relatedRecipe.id}
                   className="card group"
                 >

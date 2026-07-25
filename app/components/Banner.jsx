@@ -47,7 +47,7 @@ const Banner = () => {
           </p>
           <div>
             <Link
-              href={`/${getCategoryName(recipe.category_id)}/${recipe.category_id}`}
+              href={`/${getCategoryName(recipe.category_id)}/${recipe.id}`}
               className="btn-primary inline-flex items-center gap-2"
             >
               View Recipe

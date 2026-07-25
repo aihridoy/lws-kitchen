@@ -4,11 +4,15 @@ import React, { useState, useEffect } from 'react';
 import logo from '/public/assets/lws-kitchen.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import MobileMenu from './MobileMenu';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,24 +65,65 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  href="/category"
+                  href="/latest"
                   className="px-4 py-2 rounded-full text-sm font-medium text-ink hover:bg-cream transition-colors"
                 >
                   Latest Recipes
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/saved"
+                  className="px-4 py-2 rounded-full text-sm font-medium text-ink hover:bg-cream transition-colors"
+                >
+                  Saved
                 </Link>
               </li>
             </ul>
 
             {/* Right side: search + mobile hamburger */}
             <div className="flex items-center gap-2">
-              <button
-                className="p-2.5 rounded-full hover:bg-cream transition-colors"
-                aria-label="Search"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </button>
+              {isSearchOpen ? (
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    if (!searchTerm.trim()) return;
+                    router.push(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+                    setIsSearchOpen(false);
+                    setSearchTerm('');
+                  }}
+                  className="flex items-center gap-1"
+                >
+                  <input
+                    type="text"
+                    autoFocus
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    placeholder="Search recipes..."
+                    className="input-field h-10 w-40 sm:w-56 text-sm py-0"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setIsSearchOpen(false)}
+                    className="p-2.5 rounded-full hover:bg-cream transition-colors"
+                    aria-label="Close search"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </form>
+              ) : (
+                <button
+                  className="p-2.5 rounded-full hover:bg-cream transition-colors"
+                  aria-label="Search"
+                  onClick={() => setIsSearchOpen(true)}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+              )}
 
               {/* Mobile hamburger */}
               <button
