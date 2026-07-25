@@ -1,3 +1,119 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #1a1a2e;
+    --paper: #faf8f5;
+    --cream: #f5f0e8;
+    --amber: #e8a838;
+    --amber-dark: #d4922a;
+    --terracotta: #c4652a;
+    --sage: #6b8f71;
+    --muted: #8a8a9a;
+    --divider: #e8e4dc;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #e8a83840;
+    color: var(--ink);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--divider) transparent;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-ink tracking-tight;
+  }
+
+  .btn-primary {
+    @apply bg-amber text-ink font-semibold px-6 py-3 rounded-full
+           transition-all duration-300 ease-out
+           hover:bg-amber-dark hover:shadow-medium hover:-translate-y-0.5
+           active:translate-y-0 active:shadow-soft
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-cream text-ink font-medium px-5 py-2.5 rounded-full
+           border border-divider
+           transition-all duration-300 ease-out
+           hover:bg-divider hover:shadow-soft
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-soft overflow-hidden
+           transition-all duration-300 ease-out
+           hover:shadow-medium hover:-translate-y-1;
+  }
+
+  .card-image {
+    @apply w-full object-cover transition-transform duration-500 ease-out;
+  }
+
+  .card:hover .card-image {
+    @apply scale-105;
+  }
+
+  .input-field {
+    @apply w-full px-5 py-3 rounded-full border border-divider bg-white
+           text-ink placeholder-muted
+           transition-all duration-300 ease-out
+           focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  .badge-amber {
+    @apply badge bg-amber/15 text-amber-dark;
+  }
+
+  .badge-sage {
+    @apply badge bg-sage/15 text-sage;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
