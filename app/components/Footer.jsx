@@ -28,11 +28,16 @@ const Footer = () => {
               LWS Kitchen
             </h4>
             <ul className="space-y-2.5">
-              {['About us', 'Careers', 'Contact us', 'Feedback'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-sm hover:text-amber transition-colors duration-200">
-                    {item}
-                  </a>
+              {[
+                { label: 'About us', href: '/about' },
+                { label: 'Careers', href: '/careers' },
+                { label: 'Contact us', href: '/contact' },
+                { label: 'Feedback', href: '/feedback' },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-sm hover:text-amber transition-colors duration-200">
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -44,11 +49,16 @@ const Footer = () => {
               Legal
             </h4>
             <ul className="space-y-2.5">
-              {['Terms', 'Conditions', 'Cookies', 'Copyright'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-sm hover:text-amber transition-colors duration-200">
-                    {item}
-                  </a>
+              {[
+                { label: 'Terms', href: '/terms' },
+                { label: 'Conditions', href: '/conditions' },
+                { label: 'Cookies', href: '/cookies' },
+                { label: 'Copyright', href: '/copyright' },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-sm hover:text-amber transition-colors duration-200">
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -61,14 +71,16 @@ const Footer = () => {
             </h4>
             <div className="flex gap-3">
               {[
-                { name: 'Facebook', path: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
-                { name: 'Twitter', path: 'M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z' },
-                { name: 'Instagram', path: 'M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6.5 3h11A3.5 3.5 0 0121 6.5v11a3.5 3.5 0 01-3.5 3.5h-11A3.5 3.5 0 013 17.5v-11A3.5 3.5 0 016.5 3z' },
-                { name: 'Youtube', path: 'M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z' },
+                { name: 'Facebook', url: 'https://facebook.com', path: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
+                { name: 'Twitter', url: 'https://x.com', path: 'M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z' },
+                { name: 'Instagram', url: 'https://instagram.com', path: 'M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6.5 3h11A3.5 3.5 0 0121 6.5v11a3.5 3.5 0 01-3.5 3.5h-11A3.5 3.5 0 013 17.5v-11A3.5 3.5 0 016.5 3z' },
+                { name: 'Youtube', url: 'https://youtube.com', path: 'M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z' },
               ].map((social) => (
                 <a
                   key={social.name}
-                  href="#"
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center
                     hover:bg-amber hover:text-ink transition-all duration-300"
                   aria-label={social.name}
