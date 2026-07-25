@@ -10,7 +10,8 @@
     "published_date": "2024-09-01",
     "cooking_time": "35 minutes",
     "author": "Mia Cooper",
-    "thumbnail": "thumb-6.jpg"
+    "thumbnail": "thumb-6.jpg",
+    "id": "top-vegan-recipes-for-healthy-living"
   },
   {
     "rating": {
@@ -23,12 +24,13 @@
     "published_date": "2024-07-24",
     "cooking_time": "50 minutes",
     "author": "Emma Moore",
-    "thumbnail": "thumb-10.jpg"
+    "thumbnail": "thumb-10.jpg",
+    "id": "dessert-heaven-sweet-recipes-from-around-the-world"
   },
   {
     "rating": {
       "rating_count": 19,
-      "average_rating": 4.0
+      "average_rating": 4
     },
     "category_id": "t0u1v2w3-x4y5-z6a7-b8c9-d0e1f2g3h4i5",
     "description": "Smoothies are not only a great way to get your daily dose of fruits and veggies, but they can also be incredibly refreshing and delicious. In this blog, we explore 10 easy and nutritious smoothie recipes, perfect for breakfast or a post-workout snack. From tropical mango-pineapple smoothies to green detox blends and protein-packed berry shakes, there’s something for everyone. Learn the secrets to making the perfect smoothie every time!",
@@ -36,7 +38,8 @@
     "published_date": "2024-06-22",
     "cooking_time": "10 minutes",
     "author": "Lucas Baker",
-    "thumbnail": "thumb-5.jpg"
+    "thumbnail": "thumb-5.jpg",
+    "id": "refreshing-and-nutritious-smoothie-recipes"
   },
   {
     "rating": {
@@ -49,7 +52,8 @@
     "published_date": "2024-08-05",
     "cooking_time": "20 minutes",
     "author": "Grace Adams",
-    "thumbnail": "thumb-14.jpg"
+    "thumbnail": "thumb-14.jpg",
+    "id": "healthy-and-delicious-breakfast-ideas"
   },
   {
     "rating": {
@@ -62,7 +66,8 @@
     "published_date": "2024-07-13",
     "cooking_time": "15 minutes",
     "author": "Chloe Bennett",
-    "thumbnail": "thumb-3.jpg"
+    "thumbnail": "thumb-3.jpg",
+    "id": "salad-recipes-that-are-anything-but-boring"
   },
   {
     "rating": {
@@ -75,7 +80,8 @@
     "published_date": "2024-05-18",
     "cooking_time": "15 minutes",
     "author": "Ethan Clark",
-    "thumbnail": "thumb-2.jpg"
+    "thumbnail": "thumb-2.jpg",
+    "id": "10-easy-and-delicious-sandwich-recipes"
   },
   {
     "rating": {
@@ -88,12 +94,13 @@
     "published_date": "2024-04-28",
     "cooking_time": "25 minutes",
     "author": "David Hernandez",
-    "thumbnail": "thumb-1.jpg"
+    "thumbnail": "thumb-1.jpg",
+    "id": "waffle-recipes-for-every-occasion"
   },
   {
     "rating": {
       "rating_count": 18,
-      "average_rating": 4.0
+      "average_rating": 4
     },
     "category_id": "i5j6k7l8-m9n0-o1p2-q3r4-s5t6u7v8w9x0",
     "description": "Ramen has become a global favorite, and it's not hard to see why. This blog features a collection of ramen recipes, from traditional Japanese styles to more modern fusion versions. Whether you're making a simple miso ramen or a rich tonkotsu broth, these recipes are sure to satisfy your cravings. Learn the techniques for making homemade ramen noodles, broth, and all the toppings to create a bowl that's as good as any ramen shop.",
@@ -101,7 +108,8 @@
     "published_date": "2024-09-10",
     "cooking_time": "45 minutes",
     "author": "Zoe Foster",
-    "thumbnail": "thumb-6.jpg"
+    "thumbnail": "thumb-6.jpg",
+    "id": "ramen-recipes-from-traditional-to-modern-fusion"
   },
   {
     "rating": {
@@ -114,7 +122,8 @@
     "published_date": "2024-06-02",
     "cooking_time": "15 minutes",
     "author": "Ella Martin",
-    "thumbnail": "thumb-13.jpg"
+    "thumbnail": "thumb-13.jpg",
+    "id": "best-dips-for-any-occasion"
   },
   {
     "rating": {
@@ -127,7 +136,8 @@
     "published_date": "2024-05-14",
     "cooking_time": "30 minutes",
     "author": "Ryan Brooks",
-    "thumbnail": "thumb-7.jpg"
+    "thumbnail": "thumb-7.jpg",
+    "id": "easy-and-flavorful-seafood-recipes"
   },
   {
     "rating": {
@@ -140,7 +150,8 @@
     "published_date": "2024-02-16",
     "cooking_time": "25 minutes",
     "author": "Sophia Williams",
-    "thumbnail": "thumb-4.jpg"
+    "thumbnail": "thumb-4.jpg",
+    "id": "5-quick-and-delicious-seafood-recipes"
   },
   {
     "rating": {
@@ -153,7 +164,8 @@
     "published_date": "2024-04-02",
     "cooking_time": "30 minutes",
     "author": "John Carter",
-    "thumbnail": "thumb-12.jpg"
+    "thumbnail": "thumb-12.jpg",
+    "id": "10-hearty-and-healthy-soups-for-any-season"
   },
   {
     "rating": {
@@ -166,12 +178,13 @@
     "published_date": "2024-03-10",
     "cooking_time": "20 minutes",
     "author": "Emily Stone",
-    "thumbnail": "thumb-7.jpg"
+    "thumbnail": "thumb-7.jpg",
+    "id": "mastering-the-art-of-perfect-pancakes"
   },
   {
     "rating": {
       "rating_count": 15,
-      "average_rating": 4.0
+      "average_rating": 4
     },
     "category_id": "2c3d4e5f-6g7h-8i9j-0k1l-2m3n4o5p6q7r",
     "description": "Meat lovers, rejoice! This blog is dedicated to the art of cooking meat to perfection. Whether you're grilling, roasting, or slow-cooking, we've got you covered with expert tips and delicious recipes. From juicy steaks to tender pork chops and flavorful lamb dishes, you'll find a recipe for every occasion. Learn the secrets to achieving the perfect sear, mastering marinades, and selecting the best cuts of meat for your meals.",
@@ -179,7 +192,8 @@
     "published_date": "2024-05-08",
     "cooking_time": "45 minutes",
     "author": "James Martinez",
-    "thumbnail": "thumb-11.jpg"
+    "thumbnail": "thumb-11.jpg",
+    "id": "the-ultimate-guide-to-cooking-meat"
   },
   {
     "rating": {
@@ -192,7 +206,8 @@
     "published_date": "2024-06-15",
     "cooking_time": "35 minutes",
     "author": "Lily Thompson",
-    "thumbnail": "thumb-9.jpg"
+    "thumbnail": "thumb-9.jpg",
+    "id": "10-must-try-chicken-recipes"
   },
   {
     "rating": {
@@ -205,7 +220,8 @@
     "published_date": "2024-01-25",
     "cooking_time": "40 minutes",
     "author": "Jacob Brooks",
-    "thumbnail": "thumb-13.jpg"
+    "thumbnail": "thumb-13.jpg",
+    "id": "the-best-pasta-dishes-to-satisfy-your-cravings"
   },
   {
     "rating": {
@@ -218,7 +234,8 @@
     "published_date": "2024-03-05",
     "cooking_time": "50 minutes",
     "author": "Ella Johnson",
-    "thumbnail": "thumb-8.jpg"
+    "thumbnail": "thumb-8.jpg",
+    "id": "how-to-make-perfect-pizza-at-home"
   },
   {
     "rating": {
@@ -231,7 +248,8 @@
     "published_date": "2024-07-10",
     "cooking_time": "60 minutes",
     "author": "Isabella Green",
-    "thumbnail": "thumb-2.jpg"
+    "thumbnail": "thumb-2.jpg",
+    "id": "delicious-cake-recipes-for-every-celebration"
   },
   {
     "rating": {
@@ -244,7 +262,8 @@
     "published_date": "2024-08-20",
     "cooking_time": "90 minutes",
     "author": "Oliver Davis",
-    "thumbnail": "thumb-14.jpg"
+    "thumbnail": "thumb-14.jpg",
+    "id": "the-best-pastry-recipes-you-can-make-at-home"
   },
   {
     "rating": {
@@ -257,7 +276,8 @@
     "published_date": "2024-05-30",
     "cooking_time": "25 minutes",
     "author": "Daniel Smith",
-    "thumbnail": "thumb-3.jpg"
+    "thumbnail": "thumb-3.jpg",
+    "id": "ultimate-burger-recipes-for-every-taste"
   },
   {
     "rating": {
@@ -270,7 +290,8 @@
     "published_date": "2023-07-15",
     "cooking_time": "1 hour 30 minutes",
     "thumbnail": "thumb-14.jpg",
-    "author": "Emily Johnson"
+    "author": "Emily Johnson",
+    "id": "southern-style-crispy-fried-chicken"
   },
   {
     "rating": {
@@ -283,7 +304,8 @@
     "published_date": "2024-02-03",
     "cooking_time": "25 minutes",
     "thumbnail": "thumb-12.jpg",
-    "author": "Michael Chang"
+    "author": "Michael Chang",
+    "id": "decadent-chocolate-lava-cake"
   },
   {
     "rating": {
@@ -296,7 +318,8 @@
     "published_date": "2023-11-20",
     "cooking_time": "30 minutes",
     "thumbnail": "thumb-12.jpg",
-    "author": "Sophia Martinez"
+    "author": "Sophia Martinez",
+    "id": "mediterranean-quinoa-salad"
   },
   {
     "rating": {
@@ -309,7 +332,8 @@
     "published_date": "2024-01-10",
     "cooking_time": "20 minutes",
     "thumbnail": "thumb-2.jpg",
-    "author": "Alessandro Rossi"
+    "author": "Alessandro Rossi",
+    "id": "classic-spaghetti-carbonara"
   },
   {
     "rating": {
@@ -322,138 +346,7 @@
     "published_date": "2023-09-05",
     "cooking_time": "10 minutes",
     "thumbnail": "thumb-1.jpg",
-    "author": "Olivia Green"
-  },
-  [
-    {
-      "rating": {
-        "rating_count": 25,
-        "average_rating": 4.2
-      },
-      "category_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
-      "description": "Seafood is one of the most versatile ingredients used across many cuisines. Whether it's a simple shrimp cocktail, a hearty clam chowder, or a flavorful grilled fish, the options are endless. Seafood is not only delicious but also packed with nutrients like omega-3 fatty acids and protein. In this blog, we explore 5 easy seafood recipes you can prepare in under 30 minutes. From shrimp scampi to grilled salmon, these recipes are perfect for both beginners and experienced cooks. If you're a seafood lover, you won't want to miss this!",
-      "title": "5 Quick and Delicious Seafood Recipes",
-      "published_date": "2024-02-16",
-      "cooking_time": "25 minutes",
-      "author": "Sophia Williams",
-      "thumbnail": "thumb-4.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 18,
-        "average_rating": 3.8
-      },
-      "category_id": "7f8d5a1c-9b3e-4a6f-8f1d-5c9a9e2b3d4e",
-      "description": "There's nothing quite like a bowl of warm, comforting soup. Whether you're battling a cold or just in need of a cozy meal, soup always does the trick. This blog features a collection of hearty and healthy soups that are easy to make and full of flavor. From classic chicken noodle soup to creamy tomato bisque, you'll find something to satisfy your cravings. These recipes are perfect for meal prep, and most can be made in under 30 minutes. So grab a spoon and dive into these comforting bowls of goodness!",
-      "title": "10 Hearty and Healthy Soups for Any Season",
-      "published_date": "2024-04-02",
-      "cooking_time": "30 minutes",
-      "author": "John Carter",
-      "thumbnail": "thumb-12.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 20,
-        "average_rating": 4.5
-      },
-      "category_id": "3a1b2c3d-4e5f-6g7h-8i9j-0k1l2m3n4o5p",
-      "description": "Fluffy, light, and delicious, pancakes are a breakfast staple that everyone loves. This blog dives into the world of pancakes, from the classic buttermilk version to more adventurous varieties like banana walnut or blueberry ricotta pancakes. Whether you prefer your pancakes with syrup, fruit, or a dusting of powdered sugar, this guide will teach you how to make the perfect stack every time. These recipes are great for weekend brunches, quick breakfasts, or even dessert!",
-      "title": "Mastering the Art of Perfect Pancakes",
-      "published_date": "2024-03-10",
-      "cooking_time": "20 minutes",
-      "author": "Emily Stone",
-      "thumbnail": "thumb-7.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 15,
-        "average_rating": 4.0
-      },
-      "category_id": "2c3d4e5f-6g7h-8i9j-0k1l-2m3n4o5p6q7r",
-      "description": "Meat lovers, rejoice! This blog is dedicated to the art of cooking meat to perfection. Whether you're grilling, roasting, or slow-cooking, we've got you covered with expert tips and delicious recipes. From juicy steaks to tender pork chops and flavorful lamb dishes, you'll find a recipe for every occasion. Learn the secrets to achieving the perfect sear, mastering marinades, and selecting the best cuts of meat for your meals.",
-      "title": "The Ultimate Guide to Cooking Meat",
-      "published_date": "2024-05-08",
-      "cooking_time": "45 minutes",
-      "author": "James Martinez",
-      "thumbnail": "thumb-11.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 30,
-        "average_rating": 4.8
-      },
-      "category_id": "5f6g7h8i-9j0k-1l2m-3n4o-5p6q7r8s9t0u",
-      "description": "Chicken is one of the most versatile and popular proteins in the world. Whether you're roasting a whole bird, frying up some wings, or grilling a marinated breast, there's a chicken recipe for every taste and occasion. In this blog, we explore some of the best chicken recipes that are easy to make and packed with flavor. From spicy buffalo wings to creamy chicken alfredo, you'll never run out of delicious chicken ideas.",
-      "title": "10 Must-Try Chicken Recipes",
-      "published_date": "2024-06-15",
-      "cooking_time": "35 minutes",
-      "author": "Lily Thompson",
-      "thumbnail": "thumb-9.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 12,
-        "average_rating": 3.9
-      },
-      "category_id": "8i9j0k1l-2m3n-4o5p-6q7r-8s9t0u1v2w3x",
-      "description": "Pasta is the ultimate comfort food, and it's incredibly versatile. In this blog, we'll take you through some of the best pasta recipes, from simple spaghetti with marinara sauce to more complex dishes like homemade lasagna and creamy fettuccine alfredo. Learn how to make fresh pasta from scratch, and discover the best tips for cooking dried pasta to perfection. Whether you're feeding a crowd or just looking for a quick weeknight dinner, these pasta recipes are sure to impress.",
-      "title": "The Best Pasta Dishes to Satisfy Your Cravings",
-      "published_date": "2024-01-25",
-      "cooking_time": "40 minutes",
-      "author": "Jacob Brooks",
-      "thumbnail": "thumb-13.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 22,
-        "average_rating": 4.7
-      },
-      "category_id": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7",
-      "description": "There's no denying that pizza is a universal favorite. Whether you're a fan of classic margherita, pepperoni, or more adventurous toppings like BBQ chicken or truffle mushrooms, there's a pizza for everyone. In this blog, we take a deep dive into making pizza at home, from crafting the perfect dough to selecting the best cheeses and toppings. Learn how to bake your pizza in a home oven, and discover the secrets to achieving that crispy, chewy crust.",
-      "title": "How to Make Perfect Pizza at Home",
-      "published_date": "2024-03-05",
-      "cooking_time": "50 minutes",
-      "author": "Ella Johnson",
-      "thumbnail": "thumb-8.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 10,
-        "average_rating": 4.1
-      },
-      "category_id": "e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0",
-      "description": "Cakes are a celebration in every bite. Whether you're baking for a birthday, holiday, or just because, there's a cake recipe for every occasion. This blog explores classic cake recipes like vanilla sponge and chocolate layer cake, as well as more unique options like lemon lavender or red velvet. Learn the basics of baking, from mixing the perfect batter to frosting techniques that will make your cakes look as good as they taste.",
-      "title": "Delicious Cake Recipes for Every Celebration",
-      "published_date": "2024-07-10",
-      "cooking_time": "60 minutes",
-      "author": "Isabella Green",
-      "thumbnail": "thumb-2.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 16,
-        "average_rating": 3.6
-      },
-      "category_id": "h8i9j0k1-l2m3-n4o5-p6q7-r8s9t0u1v2w3",
-      "description": "Pastries are the epitome of indulgence, whether you're enjoying a buttery croissant for breakfast or a sweet danish for dessert. In this blog, we'll explore a variety of pastry recipes that you can easily make at home. From flaky puff pastries to rich cream-filled eclairs, you'll find something to satisfy your sweet tooth. Learn the techniques for perfecting dough, working with fillings, and creating stunning pastries that will impress your friends and family.",
-      "title": "The Best Pastry Recipes You Can Make at Home",
-      "published_date": "2024-08-20",
-      "cooking_time": "90 minutes",
-      "author": "Oliver Davis",
-      "thumbnail": "thumb-14.jpg"
-    },
-    {
-      "rating": {
-        "rating_count": 24,
-        "average_rating": 4.4
-      },
-      "category_id": "k1l2m3n4-o5p6-q7r8-s9t0-u1v2w3x4y5z6",
-      "description": "Burgers are an American classic, but they're also a blank canvas for creativity. In this blog, we'll explore some of the most mouthwatering burger recipes, from classic cheeseburgers to gourmet versions with blue cheese, caramelized onions, and truffle aioli. Learn the secrets to grilling the perfect patty, choosing the right buns, and assembling your burger with the perfect balance of flavors and textures.",
-      "title": "Ultimate Burger Recipes for Every Taste",
-      "published_date": "2024-05-30",
-      "cooking_time": "25 minutes",
-      "author": "Daniel Smith",
-      "thumbnail": "thumb-3.jpg"
-    }
-  ]
+    "author": "Olivia Green",
+    "id": "green-goddess-smoothie-bowl"
+  }
 ]
