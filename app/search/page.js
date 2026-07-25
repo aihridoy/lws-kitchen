@@ -1,6 +1,6 @@
 'use client';
 
-import { Suspense, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import recipesData from '../data/recipes.json';
 import RecipeCard from '../components/RecipeCard';
@@ -11,6 +11,10 @@ const SearchResults = () => {
   const query = searchParams.get('q') || '';
   const [inputValue, setInputValue] = useState(query);
   const term = query.trim().toLowerCase();
+
+  useEffect(() => {
+    setInputValue(query);
+  }, [query]);
 
   const results = term
     ? recipesData.filter(

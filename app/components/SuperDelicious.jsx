@@ -26,8 +26,8 @@ const SuperDelicious = () => {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {topRecipes?.map((recipe, index) => (
           <Link
-            key={recipe.title}
-            href={`/${getCategoryName(recipe.category_id)}/${recipe.category_id}`}
+            key={recipe.id}
+            href={`/${getCategoryName(recipe.category_id)}/${recipe.id}`}
             className="card group"
           >
             {/* Image */}
