@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 const RecipeDetails = ({ params }) => {
   const { recipe: recipeId } = params;
-  const recipe = recipeData.find((r) => r.category_id === recipeId);
+  const recipe = recipeData.find((r) => r.id === recipeId);
 
   if (!recipe) {
     return (
@@ -160,7 +160,7 @@ const RecipeDetails = ({ params }) => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {relatedRecipes.map((relatedRecipe) => (
                 <Link
-                  href={`/${getCategoryName(relatedRecipe.category_id)}/${relatedRecipe.category_id}`}
+                  href={`/${getCategoryName(relatedRecipe.category_id)}/${relatedRecipe.id}`}
                   key={relatedRecipe.id}
                   className="card group"
                 >
