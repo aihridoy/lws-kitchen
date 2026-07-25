@@ -67,6 +67,14 @@ const Header = () => {
                   Latest Recipes
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/saved"
+                  className="px-4 py-2 rounded-full text-sm font-medium text-ink hover:bg-cream transition-colors"
+                >
+                  Saved
+                </Link>
+              </li>
             </ul>
 
             {/* Right side: search + mobile hamburger */}

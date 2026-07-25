@@ -55,6 +55,13 @@ const MobileMenu = ({ isOpen, onClose }) => {
             >
               Latest Recipes
             </Link>
+            <Link
+              href="/saved"
+              onClick={onClose}
+              className="px-4 py-3 rounded-xl text-lg font-medium text-ink hover:bg-cream transition-colors"
+            >
+              Saved
+            </Link>
           </nav>
 
           {/* Bottom accent */}
