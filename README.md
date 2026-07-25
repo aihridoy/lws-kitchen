@@ -1,6 +1,5 @@
 # Dishcovery Realm: Recipe Discovery App
 
-![Dishcovery Realm Homepage](https://i.ibb.co.com/ccHQxtT2/kitchen.png)  
 A delightful recipe app built with **Next.js** and **React**, offering a seamless experience for exploring, saving, and sharing culinary creations. Cook, discover, and savor!
 
 ## 📖 Overview
